@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_alias_baby_time">베이비 타임</string>
+    <string name="shortcut_baby_time_short_label">베이비 타임</string>
+    <string name="shortcut_baby_time_long_label">베이비 타임 브리핑</string>
+    <string-array name="assistant_open_briefing_queries">
+        <item>베이비 타임</item>
+        <item>베이비타임</item>
+        <item>베이비 타임 브리핑</item>
+        <item>아기 브리핑</item>
+        <item>아기 상태</item>
+        <item>show the briefing</item>
+        <item>open the briefing</item>
+        <item>read the briefing</item>
+        <item>brief me</item>
+        <item>show baby briefing</item>
+        <item>show baby status</item>
+    </string-array>
+</resources>

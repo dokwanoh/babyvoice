@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <capability
+        android:name="custom.actions.intent.OPEN_BRIEFING"
+        app:queryPatterns="@array/assistant_open_briefing_queries">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.babyvoice.bridge.MainActivity"
+            android:data="babyvoice://briefing" />
+    </capability>
+
+    <shortcut
+        android:shortcutId="briefing"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_briefing_short_label"
+        android:shortcutLongLabel="@string/shortcut_briefing_long_label"
+        android:icon="@mipmap/ic_launcher">
+        <capability-binding android:key="custom.actions.intent.OPEN_BRIEFING" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="babyvoice://briefing" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="baby_time_briefing"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/shortcut_baby_time_short_label"
+        android:shortcutLongLabel="@string/shortcut_baby_time_long_label"
+        android:icon="@mipmap/ic_launcher">
+        <capability-binding android:key="custom.actions.intent.OPEN_BRIEFING" />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="babyvoice://briefing" />
+    </shortcut>
+</shortcuts>

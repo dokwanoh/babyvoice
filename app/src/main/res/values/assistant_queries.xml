@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="assistant_open_briefing_queries">
+        <item>show the briefing</item>
+        <item>open the briefing</item>
+        <item>read the briefing</item>
+        <item>brief me</item>
+        <item>show baby briefing</item>
+        <item>show baby status</item>
+    </string-array>
+</resources>

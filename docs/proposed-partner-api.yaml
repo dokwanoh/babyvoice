@@ -1,0 +1,69 @@
+openapi: 3.1.0
+info:
+  title: Baby Voice Bridge Partner API Proposal
+  version: 0.1.0
+  description: Proposed read-only partner API surface for a future official integration. This is not an assertion of any existing BabyTime API.
+servers:
+  - url: https://api.example.com
+paths:
+  /v1/me/babies:
+    get:
+      summary: List the caller's babies
+      responses:
+        "200":
+          description: OK
+  /v1/babies/{babyId}/snapshot:
+    get:
+      summary: Fetch a current snapshot for one baby
+      parameters:
+        - name: babyId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+  /v1/babies/{babyId}/activities:
+    get:
+      summary: Fetch recent activities
+      parameters:
+        - name: babyId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: cursor
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: changedSince
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date-time
+      responses:
+        "200":
+          description: OK
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://auth.example.com/oauth/authorize
+          tokenUrl: https://auth.example.com/oauth/token
+          scopes:
+            feeding.read: Read feeding records
+            sleep.read: Read sleep records
+            diaper.read: Read diaper records
+            recommendation.read: Read recommendation metadata
+security:
+  - oauth2:
+      - feeding.read
+      - sleep.read
+      - diaper.read
+      - recommendation.read
+

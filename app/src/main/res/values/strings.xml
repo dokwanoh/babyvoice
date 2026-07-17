@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">아기 브리핑</string>
+    <string name="app_alias_baby_status">아기 상태</string>
+    <string name="app_alias_baby_briefing">베이비 브리핑</string>
+    <string name="app_alias_baby_voice">Baby Voice</string>
+    <string name="app_alias_baby_log">아기 기록</string>
+    <string name="app_alias_care_log">육아 기록</string>
+    <string name="shortcut_briefing_short_label">브리핑</string>
+    <string name="shortcut_briefing_long_label">아기 브리핑 열기</string>
+    <string name="tile_briefing_label">아기 브리핑</string>
+    <string name="tile_briefing_subtitle">브리핑 듣기</string>
+</resources>
